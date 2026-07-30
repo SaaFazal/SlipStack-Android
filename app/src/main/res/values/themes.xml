@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.SlipStack" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        
+        <!-- Surface colors -->
+        <item name="colorSurface">@color/surface_high_contrast</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:colorBackground">@color/surface_background</item>
+        
+        <!-- Error color -->
+        <item name="colorError">@color/error</item>
+        
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/surface_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Theme.N1249874_SlipStack" parent="Base.Theme.SlipStack" />
+</resources>

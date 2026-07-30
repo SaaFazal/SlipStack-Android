@@ -1,0 +1,43 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">SlipStack</string>
+    
+    <!-- Login Screen -->
+    <string name="tagline">Track receipts, split bills easily</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="email_hint">Email Address</string>
+    <string name="password_hint">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login_button">Login</string>
+    <string name="create_account_link">Create account</string>
+    
+    <!-- Sign Up Screen -->
+    <string name="create_account">Create account</string>
+    <string name="join_slipstack">Join SlipStack today</string>
+    <string name="confirm_password_hint">Confirm password</string>
+    <string name="account_created">Account created</string>
+    <string name="back_to_login">Back to Login</string>
+    
+    <!-- Forgot Password Screen -->
+    <string name="forgot_password_title">Did you forget your password?</string>
+    <string name="forgot_password_instructions">Enter the email address you used for signing</string>
+    <string name="send_link_button">Send Link</string>
+    <string name="enter_pin">Enter the 6-digit pin</string>
+    <string name="new_password">New Password</string>
+    <string name="save_button">Save</string>
+    <string name="password_changed_success">Password changed successfully</string>
+    
+    <!-- Validation Messages -->
+    <string name="error_invalid_email">Invalid email address</string>
+    <string name="error_empty_email">Email is required</string>
+    <string name="error_empty_password">Password is required</string>
+    <string name="error_password_too_short">Password must be at least 6 characters</string>
+    <string name="error_passwords_dont_match">Passwords don\'t match</string>
+    <string name="error_login_failed">Login failed. Please check your credentials</string>
+    <string name="error_signup_failed">Sign up failed. Please try again</string>
+    <string name="error_network">Network error. Please check your connection</string>
+    
+    <!-- Content Descriptions (Accessibility) -->
+    <string name="cd_logo">SlipStack logo</string>
+    <string name="cd_toggle_password">Toggle password visibility</string>
+</resources>

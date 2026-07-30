@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Internet permission for Firebase -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Camera permission for receipt scanning -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.N1249874_SlipStack">
+        
+        <!-- Login Activity (Launcher) -->
+        <activity
+            android:name=".auth.LoginActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- Sign Up Activity -->
+        <activity
+            android:name=".auth.SignUpActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        
+        <!-- Forgot Password Activity -->
+        <activity
+            android:name=".auth.ForgotPasswordActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        
+        <!-- Main Activity (Home after login) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <!-- Add Receipt Activity -->
+        <activity
+            android:name=".AddReceiptActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Profile Activity -->
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Camera Activity (receipt scanning) -->
+        <activity
+            android:name=".CameraActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Scan Result Activity -->
+        <activity
+            android:name=".ScanResultActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Manual Entry Activity -->
+        <activity
+            android:name=".ManualEntryActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+            
+        <activity
+            android:name=".ReceiptDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.N1249874_SlipStack" />
+
+        <activity
+            android:name=".ImagePreviewActivity"
+            android:exported="false"
+            android:theme="@style/Theme.N1249874_SlipStack" />
+
+        <!-- FileProvider for CSV Export -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.n1249874.slipstack.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

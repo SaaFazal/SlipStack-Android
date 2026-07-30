@@ -1,0 +1,45 @@
+<resources>
+    <!-- Button Styles -->
+    <style name="Widget.SlipStack.Button.Primary" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/primary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:paddingVertical">12dp</item>
+        <item name="cornerRadius">4dp</item>
+    </style>
+    
+    <style name="Widget.SlipStack.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/primary</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:paddingVertical">12dp</item>
+        <item name="cornerRadius">4dp</item>
+    </style>
+    
+    <!-- TextInputLayout Style -->
+    <style name="Widget.SlipStack.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/primary</item>
+        <item name="hintTextColor">@color/text_hint</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="errorTextColor">@color/error</item>
+    </style>
+    
+    <!-- Text Styles -->
+    <style name="TextAppearance.SlipStack.Headline" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    
+    <style name="TextAppearance.SlipStack.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+    <style name="TextAppearance.SlipStack.Link" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/error</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

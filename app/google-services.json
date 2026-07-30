@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "50141256",
+    "project_id": "slipstack-35ec8",
+    "storage_bucket": "slipstack-35ec8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50141256:android:f75fae1a86a1024e8be07d",
+        "android_client_info": {
+          "package_name": "com.n1249874.slipstack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZlYEEDlcqHRAAI3Yzq6MFOb2CdNE0_AY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
